@@ -1,0 +1,67 @@
+<!doctype html>
+<html>
+  <head>
+    <title>Happy Birthday ❤️</title>
+    <link rel="stylesheet" href="clickme.css" />
+  </head>
+  <body>
+    <div class="container">
+      <h1 class="name">Gallery ni Jayie💕</h1>
+    </div>
+    <div class="intro">
+      <h2>For Birthday Girl HAHAHA 💕</h2>
+      <p>Every picture tells a story, and every story has you.</p>
+    </div>
+    <div class="picture">
+      <img src=" ssstik.io_1772549633983.jpeg" />
+      <img src=" ssstik.io_1772549637232.jpeg" />
+      <img src=" ssstik.io_1772469340101.jpeg" />
+      <img src=" ssstik.io_1772549642993.jpeg" alt="" />
+      <img src=" ssstik.io_1772549645740.jpeg" alt="" />
+      <img src=" ssstik.io_1772549684372.jpeg" alt="" />
+      <img src=" ssstik.io_1772549686292.jpeg" alt="" />
+      <img src="ssstik.io_1772549689839.jpeg" alt="" />
+      <img src=" ssstik.io_1772549692129.jpeg" alt="" />
+      <img src=" ssstik.io_1772549695537.jpeg" alt="" />
+      <img src=" ssstik.io_1772549696949.jpeg" alt="" />
+      <img src=" ssstik.io_1772549698375.jpeg" alt="" />
+      <img src=" ssstik.io_1772549700024.jpeg" alt="" />
+      <img src=" ssstik.io_1772549701267.jpeg" alt="" />
+      <img src=" ssstik.io_1772549704052.jpeg" alt="" />
+      <img src=" ssstik.io_1772549705463.jpeg" alt="" />
+      <img src=" ssstik.io_1772549706830.jpeg" alt="" />
+      <img src=" ssstik.io_1772549759612.jpeg" alt="" />
+      <img src=" ssstik.io_1772549761976.jpeg" alt="" />
+      <img src=" ssstik.io_1772549762972.jpeg" alt="" />
+      <img src=" ssstik.io_1772549858256.jpeg" alt="" />
+      <img src=" ssstik.io_1772549859885.jpeg" alt="" />
+      <img src=" ssstik.io_1772549861576.jpeg" alt="" />
+      <img src=" ssstik.io_1772549862927.jpeg" alt="" />
+      <img src=" ssstik.io_1772549864326.jpeg" alt="" />
+    </div>
+
+    <p class="caption">My favorite smile 💕</p>
+
+    <div class="heart-container"></div>
+    <script>
+      function createHeart() {
+        const heart = document.createElement("div");
+        heart.classList.add("heart");
+        heart.innerHTML = "💖";
+
+        heart.style.left = Math.random() * 100 + "vw";
+        heart.style.fontSize = Math.random() * 20 + 15 + "px";
+        heart.style.animationDuration = Math.random() * 3 + 2 + "s";
+
+        document.querySelector(".heart-container").appendChild(heart);
+
+        setTimeout(() => {
+          heart.remove();
+        }, 5000);
+      }
+
+      // Create heart every 300ms
+      setInterval(createHeart, 300);
+    </script>
+  </body>
+</html>

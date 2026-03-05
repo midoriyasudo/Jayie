@@ -1,0 +1,32 @@
+<!doctype html>
+<html>
+  <head>
+    <title>Happy Birthday</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <div class="content">
+        <h1>Happy Birthday</h1>
+        <h4>Wishing you all the best on your special day!</h4>
+
+        <button><a href="clickme.html">Photos Here</a></button>
+      </div>
+    </div>
+    <img src=" download-removebg-preview.png" class="cake-left" />
+    <img src=" download-removebg-preview.png" class="cake-right" />
+    <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.6.0/dist/confetti.browser.min.js"></script>
+
+    <script>
+      window.onload = function () {
+        setTimeout(() => {
+          confetti({
+            particleCount: 500,
+            spread: 200,
+            origin: { y: 0.6 },
+          });
+        }, 1000);
+      };
+    </script>
+  </body>
+</html>
